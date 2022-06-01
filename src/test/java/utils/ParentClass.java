@@ -18,7 +18,7 @@ public class ParentClass {
     public WebDriverWait wait;
 
     public ParentClass() {
-        driver = Driver.getDriver(Browser.FIREFOX);
+        driver = Driver.getDriver();
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }

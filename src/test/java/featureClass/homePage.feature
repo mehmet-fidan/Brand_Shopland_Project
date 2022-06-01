@@ -14,3 +14,13 @@ Feature: homepage
       Then user enters username and password
       And user confirms entering account
 
+
+  Scenario: products pictures check
+
+    Given user is at homepage
+    And user clicks to alle produkte
+    When user checks pictures
+    Then user checks second page pictures
+    And user checks pictures
+    Then user checks third page pictures
+    And user checks pictures
