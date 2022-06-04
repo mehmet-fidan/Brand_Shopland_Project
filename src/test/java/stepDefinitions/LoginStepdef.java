@@ -29,4 +29,9 @@ public class LoginStepdef {
     public void userConfirmsEnteringAccount() {
         logPage.loginConfirm();
     }
+
+    @And("user goes back homepage")
+    public void userGoesBackHomepage() {
+        logPage.homePage();
+    }
 }

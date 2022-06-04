@@ -1,9 +1,5 @@
+
 Feature: homepage
-
-  Scenario: go to homepage and login
-
-    Given user is at homepage
-    When does all products have picture
 
 
   Scenario: Login with Valid Information
@@ -12,11 +8,11 @@ Feature: homepage
     When user clicks login section
     Then user enters username and password
     And user confirms entering account
-
+    And user goes back homepage
 
   Scenario: products pictures check
 
     Given user is at homepage
     And user clicks to alle produkte
-    When user checks pictures
+    When user checks pictures and prices
 

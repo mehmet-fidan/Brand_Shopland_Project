@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.AllProducts;
 
-public class PicturesDefs {
+public class AllProductsDefs {
 
     AllProducts allProducts = new AllProducts();
 
@@ -15,10 +15,8 @@ public class PicturesDefs {
         allProducts.alleProdukte();
     }
 
-    @When("user checks pictures")
-    public void userChecksPictures() {
+    @When("user checks pictures and prices")
+    public void userChecksPicturesAndPrices() {
         allProducts.resimFiyatkontrol();
     }
-
-
 }

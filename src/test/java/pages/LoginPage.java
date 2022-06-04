@@ -15,6 +15,7 @@ public class LoginPage extends ParentClass {
     By lPassword = By.id("password");
     By lLoginButton = By.cssSelector("button[value='Anmelden']");
     By lMeinKonto = By.xpath("(//span//span[text()='Mein Konto '])[1]");
+    By lHomePage = By.xpath("(//li//a[@title='Startseite']//span[text()='Home'])[1]");
 
 
 
@@ -30,7 +31,10 @@ public class LoginPage extends ParentClass {
 
     public void loginConfirm() {
          WebElement eKonto = driver.findElement(lMeinKonto);
-        Assert.assertEquals(eKonto.getText(),"Mein Konto ");
+        Assert.assertEquals(eKonto.getText(),"Mein Konto");
+    }
 
+    public void homePage(){
+        clickTo(lHomePage);
     }
 }
