@@ -10,9 +10,5 @@ Feature: homepage
     And user confirms entering account
     And user goes back homepage
 
-  Scenario: products pictures check
 
-    Given user is at homepage
-    And user clicks to alle produkte
-    When user checks pictures and prices
 
