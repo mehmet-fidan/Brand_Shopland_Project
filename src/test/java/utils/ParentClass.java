@@ -1,14 +1,17 @@
 package utils;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Random;
 
@@ -72,7 +75,20 @@ public class ParentClass {
         options.get(random).click();
 
         sleep(2000);
+    }
 
+    public void screenShot(){
+
+        String fileName = "screenShots" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy.MM.dd.HH.mm.ss"));
+
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        File scrFile = screenshot.getScreenshotAs(OutputType.FILE);
+        File destFile = new File("ScreenShots\\" + fileName + ".png");
+        try {
+            FileUtils.copyFile(scrFile, destFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
