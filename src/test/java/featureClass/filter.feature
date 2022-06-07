@@ -6,7 +6,6 @@
 
       Given user is at homepage
       When user clicks to alle produkte
-     # Then user clicks filter button
-      Then user select color options
-     # Then user select size option
+      Then user clicks filter button
+      Then user enter product options
       And user close the driver

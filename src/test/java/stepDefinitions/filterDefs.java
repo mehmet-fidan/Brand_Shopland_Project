@@ -13,16 +13,10 @@ public class filterDefs {
         filter.filterButton();
     }
 
-    @Then("user select color options")
-    public void userSelectColorOptions() {
-        filter.colorFilter();
+    @Then("user enter product options")
+    public void userEnterProductOptions() {
+        filter.filterAll();
     }
 
-  /*  @Then("user select size option")
-    public void userSelectSizeOption() {
-        filter.sizeColor();
-    }
-
-   */
 
 }
