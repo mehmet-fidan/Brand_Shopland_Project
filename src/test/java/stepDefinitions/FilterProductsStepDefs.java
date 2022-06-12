@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import pages.FilterPage;
 
 
-public class filterDefs {
+public class FilterProductsStepDefs {
 
     FilterPage filter = new FilterPage();
 

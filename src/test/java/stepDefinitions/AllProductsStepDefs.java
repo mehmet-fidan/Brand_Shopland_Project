@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.AllProducts;
 
-public class AllProductsDefs {
+public class AllProductsStepDefs {
 
     AllProducts allProducts = new AllProducts();
 

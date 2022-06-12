@@ -3,7 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import pages.HomePagePictures;
 
-public class HomePageDefs {
+public class HomePageStepDefs {
 
     HomePagePictures homePage = new HomePagePictures();
 

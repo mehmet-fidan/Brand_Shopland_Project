@@ -54,10 +54,6 @@ public class FilterPage extends ParentClass {
         sleep(1000);
     }
 
-    public void scroll(By locator) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", locator);
-    }
 
     public void priceFilter() {
         WebElement leftSlider = driver.findElement(lPriceSliderLeft);

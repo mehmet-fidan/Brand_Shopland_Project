@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 public class ParentClass {
 
@@ -90,6 +91,16 @@ public class ParentClass {
             e.printStackTrace();
         }
     }
+
+    public void scroll(String scrollValue) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+       //  js.executeScript("arguments[0].scrollIntoView(true);", locator);
+       // js.executeScript("arguments[0].scrollIntoView();",locator);
+       // js.executeScript("window.scrollTo(0, document.body.scrollHeight)");  //bottom of page
+     //   js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");  //top of page
+        js.executeScript(scrollValue);
+    }
+
 
 }
 

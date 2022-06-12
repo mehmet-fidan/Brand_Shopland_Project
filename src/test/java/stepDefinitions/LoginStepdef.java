@@ -30,8 +30,8 @@ public class LoginStepdef {
         logPage.loginConfirm();
     }
 
-    @And("user goes back homepage")
-    public void userGoesBackHomepage() {
+    @And("user goes back to homepage")
+    public void userGoesBackToHomepage() {
         logPage.homePage();
     }
 }

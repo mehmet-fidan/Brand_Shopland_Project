@@ -8,7 +8,8 @@ Feature: homepage
     When user clicks login section
     Then user enters username and password
     And user confirms entering account
-    And user goes back homepage
+    And user goes back to homepage
+    Then user close the driver
 
 
 

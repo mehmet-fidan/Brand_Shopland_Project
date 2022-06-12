@@ -7,8 +7,8 @@ import utils.ParentClass;
 
 public class LoginPage extends ParentClass {
 
-    String username = "kursjava@gmail.com";
-    String password = "kurs.java.123";
+    String username = " zeydin.toprak@hotmail.com";
+    String password = "toprak.21";
 
     By lLogin = By.xpath("(//span[text()='Login'][1])");
     By lUsername = By.id("username");
